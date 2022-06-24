@@ -12,5 +12,8 @@ main {
 li {
     color: blue;
 }
+#copyright {
+    text-align: center;
+}
 
 
