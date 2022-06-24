@@ -1,0 +1,16 @@
+header{
+    background-color: #EAC926;
+}
+#barrabusqueda{
+    text-align: center;
+}
+main {
+    text-align: center;
+    background-color: rgb(223, 217, 217);
+    margin-top: 0;
+}
+li {
+    color: blue;
+}
+
+
