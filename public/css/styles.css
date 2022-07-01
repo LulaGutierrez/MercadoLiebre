@@ -1,19 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+:root{
+    --colorAmarillo:#EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259c3;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+    --tipografia : 'Roboto';
+    --cuerpoDeTexto: 12px;
+    --titulares: 24px;
+    --precios: 18px;
+    --descripcionesYdescuentos: 16px;
+
+}
+
+body{
+    font-family: var(--tipografia);
+}
+
+h3{
+    font-size: var(--titulares)
+}
+
 header{
-    background-color: #EAC926;
+    background-color: var(--colorAmarillo);
 }
-#barrabusqueda{
-    text-align: center;
-}
-main {
-    text-align: center;
-    background-color: rgb(223, 217, 217);
-    margin-top: 0;
-}
-li {
-    color: blue;
-}
-#copyright {
+
+main{
     text-align: center;
 }
 
+.precio{
+    font-size: var(--precios);
+    
+}
 
+.descuentoYdescripcion{ 
+    font-size: var(--descripcionesYdescuentos);
+}
+
+
+ul{
+    list-style: none;
+    padding: 5px;
+}
+
+.burger-menu {
+    text-align: center;
+    background-color: var(--colorCeleste);
+    margin-left: 45%;
+    display: inline-block;
+    padding: 5px 8px;
+    color: var(--colorGrisClaro);
+    border-radius: 10%;
+    margin-bottom: 5px;
+}
+
+#p-header{
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.titulofooter {
+    font-weight: 500;
+   margin-bottom: 0px;
+   margin-top: 0px;
+}
+
+.cuerpo{
+   font-size: var(--cuerpoDeTexto);
+   margin-top: 0px;
+}
+
+section i {
+    color: var(--colorCeleste);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+#copyright{
+    text-align: left;
+    font-size: 10px;
+    padding-top: 20px;
+}
