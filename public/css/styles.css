@@ -23,6 +23,8 @@
 body{
     font-family: var(--tipografia);
     margin: 0px;
+    align-content: center;
+
 }
 
 h3{
@@ -61,12 +63,12 @@ ul{
 }
 
 main{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
     padding: 10px;
+    background-color: #D1D1D1;
 }
 
 .descripcionTotalArticulo{
@@ -78,6 +80,16 @@ main{
 
 .articuloshome{
     padding: 5px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+}
+
+.articuloshome img{
+    width: 100%;
 }
 
 .precio{
