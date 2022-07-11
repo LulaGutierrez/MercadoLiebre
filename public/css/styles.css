@@ -23,6 +23,9 @@
 body{
     font-family: var(--tipografia);
     margin: 0px;
+    align-items: center;
+    text-align: left;
+
 }
 
 h3{
@@ -67,6 +70,7 @@ main{
     align-items: center;
     margin: 10px;
     padding: 10px;
+    background-color: #D1D1D1;
 }
 
 .descripcionTotalArticulo{
@@ -78,6 +82,15 @@ main{
 
 .articuloshome{
     padding: 5px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+}
+
+.articuloshome img{
+    width: 100%;
 }
 
 .precio{
