@@ -15,35 +15,32 @@
 
 }
 
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: var(--tipografia);
+    margin: 0px;
 }
 
 h3{
-    font-size: var(--titulares)
+    font-size: var(--titulares);
+    color: var(--colorGrisOscuro);
 }
 
 header{
     background-color: var(--colorAmarillo);
 }
 
-main{
-    text-align: center;
-}
-
-.precio{
-    font-size: var(--precios);
-    
-}
-
-.descuentoYdescripcion{ 
-    font-size: var(--descripcionesYdescuentos);
-}
-
-
 ul{
     list-style: none;
     padding: 5px;
+}
+
+#p-header{
+    text-align: center;
 }
 
 .burger-menu {
@@ -55,20 +52,50 @@ ul{
     color: var(--colorGrisClaro);
     border-radius: 10%;
     margin-bottom: 5px;
+} 
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
-#p-header{
-    text-align: center;
+main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
 }
 
-footer {
-    text-align: center;
+.descripcionTotalArticulo{
+    text-align: left;
+    border-top: 1px solid var(--colorGrisClaro);
+    padding: 15px;
+    background-color: white;
 }
 
-.titulofooter {
-    font-weight: 500;
-   margin-bottom: 0px;
-   margin-top: 0px;
+.articuloshome{
+    padding: 5px 0;
+}
+
+.precio{
+    font-size: var(--precios);
+    margin-bottom: 0;
+    
+}
+
+.descuento{ 
+    font-size: var(--descripcionesYdescuentos);
+    color: var(--colorVerde);
+    margin-top: 0;
+}
+
+.descripcion{
+    font-size: var(--descripcionesYdescuentos);
+    color: var(--colorGrisOscuro);
+   
 }
 
 .cuerpo{
@@ -83,8 +110,59 @@ section i {
     font-size: 2em;
 }
 
+section{
+    align-items: center;
+}
+
+
+.fa-truck {
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+    color: var(--colorVerde);
+    padding: 5%;
+    font-size: small;
+
+}
+
+footer {
+    text-align: center;
+}
+
+.titulofooter {
+   font-weight: 500;
+   margin-bottom: 0px;
+   margin-top: 0px;
+}
+
 #copyright{
     text-align: left;
     font-size: 10px;
     padding-top: 20px;
+    padding-left: 5px;
+}
+
+/* CELULAR */
+@media (max-width: 361px){
+
+   .descripcion{
+       display: none;
+   }
+
+   ul{
+       display: none;
+   }
+}
+
+/* TABLET */
+
+@media (min-width: 768px){
+    
+    .articuloshome{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+
 }
