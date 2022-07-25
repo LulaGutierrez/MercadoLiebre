@@ -1,0 +1,220 @@
+
+h3{
+    font-size: var(--titulares);
+    color: var(--colorGrisOscuro);
+    background-color: var(--colorGrisClaro);
+    text-align: left;
+    margin-left: 10px;
+}
+
+header{
+    background-color: var(--colorAmarillo);   
+    width: 100%; 
+}
+
+.encabezado{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    gap: 20px
+}
+
+.site{
+    justify-content: flex-start;
+}
+
+.user{
+    justify-content: flex-end;
+}
+
+.compra{
+    text-align: center;
+    margin: 0;
+}
+
+.burger-menu {
+    text-align: center;
+    background-color: var(--colorCeleste);
+    margin-left: 45%;
+    display: inline-block;
+    padding: 5px 8px;
+    color: var(--colorGrisClaro);
+    border-radius: 10%;
+    margin-bottom: 5px;
+} 
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+main{
+    /*align-items: center;*/
+    /*padding: 10px;*/
+    background-color: var(--colorGrisClaro);
+    /*text-align: center;*/
+}
+
+main section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    align-items:center;
+    justify-content: flex-start;
+    padding: 5%; 
+    gap: 30px 5px; 
+}
+
+.articuloshome{
+    padding: 5px 0; 
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    
+}
+
+.descripcionTotalArticulo{
+    text-align: left;
+    border-top: 1px solid var(--colorGrisClaro);
+    padding: 15px;
+    background-color: white;
+    position: relative;
+}
+
+.articuloshome img{
+    width: 200px;
+}
+
+.precio{
+    font-size: var(--precios);
+    display: inline;
+    width: 30%;
+}
+
+.descuento{ 
+    font-size: var(--descripcionesYdescuentos);
+    color: var(--colorVerde);
+    display: inline;
+    width: 70%;
+}
+
+.descripcion{
+    font-size: var(--descripcionesYdescuentos);
+    color: var(--colorGrisOscuro);
+    
+}
+
+.cuerpo{
+   font-size: var(--cuerpoDeTexto);
+   margin-top: 0px;
+}
+
+section i {
+    color: var(--colorCeleste);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+
+.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--colorVerde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: var(--colorVerde);
+}
+
+footer {
+    text-align: center;
+}
+
+.titulofooter {
+   font-weight: 500;
+   margin-bottom: 0px;
+   margin-top: 0px;
+}
+
+#copyright{
+    text-align: left;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+/* CELULAR */
+@media (max-width: 361px){
+
+   .descripcion{
+       display: none;
+   }
+
+   ul{
+       display: none;
+   }
+   
+   .encabezado{
+    flex-grow: 50%;
+   }
+
+   main section{
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;  
+}
+
+
+.articuloshome{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 100%;
+}
+
+}
+
+/* TABLET */
+
+@media (min-width: 768px){    
+    
+    .burger-menu {
+        display: none;
+    }
+    
+    main section{
+        display: flex;
+        /*flex-direction: row;*/
+        flex-wrap: wrap;  
+        text-align: justify;
+        gap: 20px 20px;
+    }
+    
+    .articuloshome{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 50%;
+    }
+
+}
