@@ -137,7 +137,7 @@ section i {
     right: 20px;
     top: -15px;
     color: var(--colorVerde);
-    justify-self:center
+    
 }
 
 footer {
@@ -197,7 +197,7 @@ footer {
     }
     
    .articuloshome{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
     width: 50%;
     justify-content: space-between;
     }

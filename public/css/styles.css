@@ -1,3 +1,5 @@
-@import "./general.css";
-@import "./intento.css";
+@import './general.css';
+@import './intento.css';
+@import './login.css';
+@import './register.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
