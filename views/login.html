@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="encabezado">
-            <div class="logo"> <img src="/img/logo-mercado-liebre.svg" alt="logo" height="40"></div>
+            <div class="logo"><a href="/"><img src="/img/logo-mercado-liebre.svg" alt="logo" height="40"></a></div>
             <div class="barrabusqueda">
                 <form action="">
                     <input type="text" placeholder="Buscar productos, marcas, etc" />
@@ -33,8 +33,8 @@
 
             </ul>
             <ul class="user">
-                <li>Creá tu cuenta <i class="fa-solid fa-id-card"></i></li>
-                <li>Ingresá<i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+                <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá<i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
                 <li>Mis compras<i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
@@ -43,16 +43,16 @@
         </div>
         <div class="banner"><img src="/img/img-home-banner.jpg" alt="banner"></div>
     </header>
-    <main>
+    <main class="login-main">
         <h3>LOGIN</h3>
         <form action="" class="login-form">
             <div class="login-formulario">
-                <label class="formLabel" for="usuario">Nombre de usuario</label>
-                <input class="formInput" type="text" id="user" autocomplete="off" name="user" min="0" max="32">
+                <label class="login-formLabel" for="usuario">Nombre de usuario</label>
+                <input class="login-formInput" type="text" id="user" autocomplete="off" name="user" min="0" max="32">
             </div>
             <div class="login-formulario">
-                <label class="formLabel" for="contraseña">Contraseña</label>
-                <input class="formInput" type="text" id="password" autocomplete="off" name="password">
+                <label class="login-formLabel" for="contraseña">Contraseña</label>
+                <input class="login-formInput" type="text" id="password" autocomplete="off" name="password">
                 <small>*Debe contener entre 8 y 15 caracteres</small>
             </div>
             <div>
@@ -60,30 +60,31 @@
                 <label class="recordame" for="recordame">Recordame</label>
             </div>
         </form>
-        <div class="login-boton">
-            <button><a href="/" >Página principal</a></button>
-        </div>
+           
+        <button class="login-boton"><a href="/">Envío</a></button>
+            
+        
     </main>
-    <footer>
-        <section>
+    <footer class="foot">
+        <section class="seccion1">
             <i class="fa-solid fa-credit-card"></i>
             <p class="titulofooter">Pagá con tarjeta o en efectivo</p>
             <p class="cuerpo">Con Mercado Liebre Cash, tenés cuotas sin<br> interés con tarjeta o efectivo en
                 puntos de <br> pago. ¡Y siempre es seguro!</p>
         </section>
-        <section>
+        <section class="seccion1">
             <i class="fa-solid fa-gift"></i>
             <p class="titulofooter">Envío gratis desde $ 2.500</p>
             <p class="cuerpo">Solo por estar registrad@ en Mercado Liebre <br> tenés envíos gratis en miles de
                 productos. Es <br> un beneficio de Mercado Puntos.</p>
         </section>
-        <section>
+        <section class="seccion1">
             <i class="fa-solid fa-user-shield"></i>
             <p class="titulofooter">Seguridad, de principio a fin</p>
             <p class="cuerpo">¿No te gusta? ¡Devolvelo! En Mercado Liebre, <br> no hay nada que no puedas hacer,
                 porque <br> estás siempre protegid@.</p>
         </section>
-        <section>
+        <section class="seccion2">
             <p id="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
     </footer>

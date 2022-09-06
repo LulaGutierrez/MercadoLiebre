@@ -1,119 +1,73 @@
-/* HEADER */
-header{
-    background-color: var(--colorAmarillo);   
-    width: 100%; 
-}
-
-.encabezado{
-    display: flex;
-    flex-wrap: wrap; 
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-    padding-top: 5px;
-}
-
-nav{
-    display: none;
-}
-
-ul{
-    display: none;
-}
-/* el nav que tiene display flex, flex wrap wrap y jusitfy content space bitwin estan en tablet
-ul site y user tambien*/
-
-.compra{
-    text-align: center;
-    margin: 0;
-}
-
-.burger-menu {
-    text-align: center;
-    background-color: var(--colorCeleste);
-    margin-left: 45%;
-    display: inline-block;
-    padding: 5px 8px;
-    color: var(--colorGrisClaro);
-    border-radius: 10%;
-    margin-bottom: 5px;
-    margin-top: 10px;
-} 
-
-.banner{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-
-}
-
 /* MAIN */
 
-main{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
+.reg-main{
     background-color: var(--colorGrisClaro);
     text-align: center;
     align-items: center;
     justify-content: center;
+    padding-left: 22%;
+    padding-top: 5%;
+    padding-bottom: 8%;
 }
 
-h3{
- font-size: var(--titulares);
- text-align: left;
- margin: 20px 0;
+.reg-h3{
+    padding-left: 30%;
 }
 
-.form{
-    width: 60%;
-    padding: 4px;
-    box-shadow: 0px 2px 5px rgb(100, 100, 100);
-}
-
-.formulario{
-    /*text-align: center;*/
-    padding: 30px;
-    line-height: 25px;
-    
-
-}
-.boton{
+.reg-form{
     display: flex;
-    justify-content: center;
-
-    font-size: medium;
-    width: 20%;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 10px;
     box-shadow: 0px 2px 5px rgb(100, 100, 100);
+    
+}
+
+.reg-formBox1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.reg-radio{
+    padding: 0 15%;
+}
+
+
+.reg-inputCheck{
+    padding: 0 3%;
+}
+
+.reg-formBox{
+    width: 50%;
+    margin: 2px 0;
+
+}
+.reg-formLabel{
+    
+    line-height: 25px;
+    padding: 0 5%;
+
+}
+
+.reg-formLabel{
+    width: 100%;
+}
+
+.reg-formInput{
+    width: 30%;
+}
+
+.reg-formText{
+    width: 30%;
+}
+
+
+.reg-boton{
     border: none;
+    font-size: medium;
+    width: 40%;
     border-radius: 10px;
     text-align:center;
-    margin: 2%;
-}
-
-button{
-    border: none;
-    padding: 5px 0;
-}
-
-
-/* FOOTER */
-
-footer {
-    text-align: center;
-    background-color: #FFF;
-}
-
-.titulofooter {
-   font-weight: 500;
-   margin-bottom: 0px;
-   margin-top: 0px;
-}
-
-#copyright{
-    text-align: left;
-    font-size: 10px;
-    padding-top: 20px;
-    padding-left: 5px;
 }

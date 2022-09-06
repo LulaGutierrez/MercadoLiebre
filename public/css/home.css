@@ -63,6 +63,8 @@ ul{
     flex-grow: 1;
 }
 
+
+/* MAIN */
 main{
     /*align-items: center;*/
     /*padding: 10px;*/
@@ -90,6 +92,20 @@ main section{
     align-items: center;
     
 }
+.fa-truck {
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px; /**/
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--colorVerde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 17px;
+    top: -17px;
+    color: var(--colorVerde);
+}
 
 .descripcionTotalArticulo{
     text-align: left;
@@ -97,6 +113,7 @@ main section{
     padding: 15px;
     background-color: white;
     position: relative;
+    width: 100%;
 }
 
 .articuloshome img{
@@ -119,7 +136,7 @@ main section{
 .descripcion{
     font-size: var(--descripcionesYdescuentos);
     color: var(--colorGrisOscuro);
-    
+    position: relative;
 }
 
 .cuerpo{
@@ -135,20 +152,6 @@ section i {
 }
 
 
-.fa-truck {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid var(--colorVerde);
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    color: var(--colorVerde);
-}
 
 footer {
     text-align: center;

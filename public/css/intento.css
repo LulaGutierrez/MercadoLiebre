@@ -1,11 +1,4 @@
-h3{
-    font-size: var(--titulares);
-    color: var(--colorGrisOscuro);
-    background-color: var(--colorGrisClaro);
-    text-align: left;
-    margin-left: 80px;
-}
-
+/* HEADER */
 header{
     background-color: var(--colorAmarillo);   
     width: 100%; 
@@ -18,6 +11,25 @@ header{
     justify-content: center;
     justify-content: space-around;
     padding-top: 5px;
+}
+
+.barrabusqueda form{
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fa-magnifying-glass{
+    border: none;
+    background-color: #FFF;
+    width: 12%;
+}
+
+.busqueda{
+    border: none;
+    width: 80%;
 }
 
 nav{
@@ -34,6 +46,7 @@ ul site y user tambien*/
     text-align: center;
     margin: 0;
 }
+
 
 .burger-menu {
     text-align: center;
@@ -54,20 +67,19 @@ ul site y user tambien*/
 
 }
 
+/* MAIN */
+
 main{
-    /*align-items: center;*/
-    /*padding: 10px;*/
     background-color: var(--colorGrisClaro);
-    /*text-align: center;*/
+    
 }
 
-main section{
+.caja {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
     align-items:center;
     justify-content: center;
-    /*justify-content: flex-start;*/
     padding: 5%; 
     gap: 30px 5px; 
 }
@@ -78,19 +90,29 @@ main section{
     text-align: center;
     background-color: white;
     margin: 10px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);   
+    /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);*/
+    width: 100%;   
 }
 
 .descripcionTotalArticulo{
     text-align: left;
     border-top: 1px solid var(--colorGrisClaro);
-    padding: 15px;
+    padding: 8px;
     background-color: white;
     position: relative;
+    
 }
 
+
+.fa-truck:before {
+    position: absolute;
+    top: 29%;
+    left: 28%;
+}
+
+
 .articuloshome img{
-    width: 200px;
+    width: 100%;
 }
 
 .precio{
@@ -110,6 +132,7 @@ main section{
     font-size: var(--descripcionesYdescuentos);
     color: var(--colorGrisOscuro);
     display: none;
+   
 }
 
 .cuerpo{
@@ -134,12 +157,12 @@ section i {
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
-    right: 20px;
-    top: -15px;
+    right: 10px;
+    top: -40px;
     color: var(--colorVerde);
     
 }
-
+ /* FOOTER */
 footer {
     text-align: center;
     background-color: #FFF;
@@ -157,13 +180,11 @@ footer {
     padding-top: 20px;
     padding-left: 5px;
 }
-/* la descricoion en el celu no se ve, tampoco las ul, yo tengo el encabezado en flex grow
- y en la tablet */
+
 /* TABLET */
 @media (min-width: 768px){
-
+    /* HEADER */
     nav{
-        display: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -188,32 +209,125 @@ footer {
         display: none;
     }
     
+
+    /* MAIN */
+    .titular{
+        margin: 0%;
+        padding: 0%;
+    }
     main section{
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 6%;
+        gap: 15px 0px;
+        /* display: flex;
         flex-wrap: wrap;  
-        text-align: justify;
-        gap: 20px 20px;
-        align-items: center;
+       text-align: justify; 
+        gap: 20px 3px;
+        align-items: center;*/
     }
     
    .articuloshome{
     /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
-    width: 50%;
+    width: 35%;
     justify-content: space-between;
     }
     
     .descripcion{
        display: block;
+       font-size: var(--descripcionesYdescuentos);
+       color: var(--colorGrisOscuro);
     }
     
+    /* FOOTER*/
+    footer {
+        text-align: center;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+    }
 
+    .seccion1{
+        width: 32%;
+    }
+
+    .seccion2{
+        width: 90%;
+        text-align: center;
+    }
 }
 
 /*  DESKTOP */
-
 @media (min-width: 1024px ){ 
+    /* HEADER */
     
-    .articuloshome{
+    .burger-menu{
+    display: none;
+    }
+    
+    /* MAIN */
+    main section{
+        padding-top: 0;
+    }
+
+    .caja{
+        padding-top: 0;
+        height: 350px;
+    } 
+    
+    article:hover .descripcion{
+        height: 30px;
+    }
+
+
+    article{
+        width: 20%;
+        margin: 10px 2%;
+        height: 220px;
+        transition: all .2s ease;
+        -webkit-transition: all .2s ease;
+        -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+        -o-transition: all .2s ease;
+    }
+
+    .articuloshome:hover { 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .articuloshome{ /* es donde está el todo el producto*/
         width: 22%;
+    }
+    
+    .articuloshome:hover .descripcion{
+        display:block;
+    }
+
+    .descripcion{
+        display: none;
+        width: 100%;
+        margin: 3px;
+    }
+
+    .articuloshome:hover .camioncito i{
+        transform: rotate(-360deg);
+    }
+
+    .fa-truck{
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    }
+
+    /* FOOTER */
+    .foot:hover i{
+        color: #0022AA;
     }
 }
